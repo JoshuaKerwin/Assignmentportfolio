@@ -3,15 +3,20 @@ body {
 }
 
 header .logo {
-  background-color: aqua;
-  color: black;
+  background-image: linear-gradient(to bottom right, #D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3, #190087);
+  font-family: Heebo;
+  font-weight: 100;
+  color: white;
   text-align: center;
+  height: 105px;
 }
 header .logo span {
-  font-weight: bold;
+  font-family: Heebo;
+  font-weight: 400;
+  color: white;
 }
 header .logo a {
-  color: black;
+  color: white;
   text-align: center;
   text-decoration: none;
 }
@@ -27,8 +32,12 @@ header .logo h1 {
   align-content: center;
   background-color: black;
   color: white;
+  height: 30px;
+  padding: 10px;
 }
 .navigation a {
+  font-family: Heebo;
+  font-weight: 400;
   color: white;
 }
 
@@ -38,6 +47,8 @@ header .logo h1 {
   align-content: center;
   background-color: black;
   color: white;
+  height: 50px;
+  padding: 10px;
 }
 .socialblock img {
   width: 30px;
@@ -45,73 +56,96 @@ header .logo h1 {
 }
 
 .block {
-  background-color: aqua;
+  background-image: linear-gradient(to bottom right, #D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3, #190087);
   color: black;
   text-align: center;
+  height: 30px;
+}
+.block h3 {
+  margin: 0px;
+  padding: 6px;
+  font-family: Heebo;
+  font-weight: 400;
+  color: white;
 }
 
 footer {
   background-color: black;
+  font-family: Heebo;
+  font-weight: 100;
   color: white;
   text-align: center;
 }
 
-body .profile img {
+.body .homedisplay {
+  margin: 0;
+}
+.body .homedisplay a {
+  text-decoration: none;
+}
+.body .homedisplay img {
+  margin: 0px;
+  width: 100%;
+  height: auto;
+}
+.body .profile img {
   Width: 200px;
   border-radius: 50%;
 }
-body form {
+.body form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body form input[type=text] {
+.body form input[type=text] {
   width: 50%;
 }
-body form #message {
+.body form #message {
   height: 200px;
 }
-body form input[type=submit] {
-  background-color: aqua;
-  color: black;
+.body form input[type=submit] {
+  background-image: linear-gradient(to bottom right, #D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3, #190087);
+  font-family: Heebo;
+  font-weight: 400;
+  color: white;
   padding: 12px 20px;
   border: none;
 }
-body .resume {
-  background-color: aqua;
+.body .resume {
+  background-image: linear-gradient(to bottom right, #D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3, #190087);
   width: fit-content;
   padding: 12px 20px;
   border: none;
 }
-body .resume a {
-  color: black;
+.body .resume a {
+  font-family: Heebo;
+  font-weight: 400;
+  color: white;
   text-decoration: none;
 }
-body .bloglayout {
-  background-color: beige;
+.body .bloglayout a {
+  text-decoration: none;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  justify-content: space-around;
 }
-body .bloglayout a {
-  text-decoration: none;
-  padding: 5px;
-}
-body .bloglayout .articlecontainer {
-  width: 600px;
-  height: 150px;
+.body .bloglayout .articlecontainer {
+  width: 70%;
+  height: auto;
   background-color: white;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-shadow: 2px 2px 2px 2px lightgray;
 }
-body .bloglayout .articlecontainer img {
-  width: 200px;
+.body .bloglayout .articlecontainer img {
+  width: 100%;
   height: auto;
 }
-body .bloglayout .articlecontainer .profilepic {
+.body .bloglayout .articlecontainer .profilepic {
   border-radius: 50%;
   width: 50px;
   height: 50px;

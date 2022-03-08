@@ -4,14 +4,19 @@ body{
 }
 header{
     .logo{
-        background-color:aqua;
-        color: black;
+        background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
+        font-family: Heebo;
+        font-weight:100;
+        color: white;
         text-align: center;
+        height: 105px;
             span{
-                font-weight: bold;
+                font-family: Heebo;
+                font-weight: 400;
+                color: white;
             }
             a{
-                color: black;
+                color: white;
                 text-align: center;
                 text-decoration: none;
             }
@@ -28,7 +33,11 @@ header{
     align-content: center;
     background-color: black;
     color: white;
+    height: 30px;
+    padding: 10px;
     a{
+        font-family: Heebo;
+        font-weight: 400;
         color: white;
     }
 }
@@ -38,23 +47,46 @@ header{
     align-content: center;
     background-color: black;
     color: white;
+    height: 50px;
+    padding: 10px;
     img{
         width: 30px;
         height: 30px;
     }
 }
 .block{
-    background-color: aqua;
+    background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
     color: black;
     text-align: center;
+    height: 30px;
+    h3{
+        margin: 0px;
+        padding: 6px;
+        font-family: Heebo;
+        font-weight: 400;
+        color: white;
+    }
 }
 footer{
     background-color: black;
+    font-family: Heebo;
+    font-weight: 100;
     color: white;
     text-align: center;
 }
 // This is the scss for all body elements, code is nested in order of pages home, about, contact, work-history, blog
-body{
+.body{
+    .homedisplay{
+        margin: 0;
+        a{
+            text-decoration: none;
+        }
+        img{
+            margin: 0px;
+            width: 100%;
+            height: auto;
+        }
+    }
     .profile{
         img{
             Width:200px;
@@ -72,42 +104,46 @@ body{
             height:200px;
         }
         input[type=submit]{
-            background-color: aqua;
-            color: black;
+            background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
+            font-family: Heebo;
+            font-weight: 400;
+            color: white;
             padding: 12px 20px;
             border: none;
         }
     }
     .resume{
-        background-color: aqua;
+        background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
         width: fit-content;
         padding: 12px 20px;
         border: none;
         a{
-            color: black;
+            font-family: Heebo;
+            font-weight: 400;
+            color: white;
             text-decoration: none;
         }
     }
     .bloglayout{
-        background-color: beige;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-around;
         a{
             text-decoration: none;
             padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
         }
         .articlecontainer{
-            width:600px;
-            height:150px;
+            width:70%;
+            height: auto;
             background-color: white;
             display:flex;
+            flex-direction:column;
             flex-wrap: wrap;
             justify-content: space-between;
+            box-shadow: 2px 2px 2px 2px lightgray;
             img{
-                width: 200px;;
+                width: 100%;
                 height: auto;
             }
             .profilepic{
