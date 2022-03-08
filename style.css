@@ -1,6 +1,7 @@
-header {
-  padding: 0px;
+body {
+  margin: 0px;
 }
+
 header .logo {
   background-color: aqua;
   color: black;
@@ -13,6 +14,11 @@ header .logo a {
   color: black;
   text-align: center;
   text-decoration: none;
+}
+header .logo h1 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .navigation {
@@ -80,6 +86,36 @@ body .resume {
 body .resume a {
   color: black;
   text-decoration: none;
+}
+body .bloglayout {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+body .bloglayout a {
+  text-decoration: none;
+  padding: 5px;
+}
+body .bloglayout .articlecontainer {
+  width: 600px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .bloglayout .articlecontainer img {
+  width: 200px;
+  height: auto;
+}
+body .bloglayout .articlecontainer .profilepic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
 }
 
 article .authorblock img {
