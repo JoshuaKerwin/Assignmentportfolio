@@ -1,18 +1,19 @@
 // This is the scss for all Header elements, code is in order of pages home, about, contact, work-history, blog
 body{
     margin: 0px;
+    font-family: Helvetica, sans-serif;
 }
 header{
     .logo{
         background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
-        font-family: Heebo;
+        font-family: Heebo, Helvetica, sans-serif;
         font-weight:100;
         color: white;
         text-align: center;
         height: 105px;
             span{
-                font-family: Heebo;
-                font-weight: 400;
+                font-family: Helvetica, sans-serif;
+                font-weight: 800;
                 color: white;
             }
             a{
@@ -36,7 +37,7 @@ header{
     height: 30px;
     padding: 10px;
     a{
-        font-family: Heebo;
+        font-family: Heebo, Helvetica, sans-serif;
         font-weight: 400;
         color: white;
     }
@@ -62,14 +63,14 @@ header{
     h3{
         margin: 0px;
         padding: 6px;
-        font-family: Heebo;
+        font-family: Heebo, Helvetica, sans-serif;
         font-weight: 400;
         color: white;
     }
 }
 footer{
     background-color: black;
-    font-family: Heebo;
+    font-family: Heebo, Helvetica, sans-serif;
     font-weight: 100;
     color: white;
     text-align: center;
@@ -155,16 +156,68 @@ footer{
         }
     }
 }
+// This is where i style the article contents on my site
 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-align: center;
+        font-size: 25px;
+        font-style: italic;
+        color:#6B00D7;
+        margin-top: 0px;
+    }
+    h4{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
     .authorblock{
-        img{
-            border-radius: 50%;
-            width: 50px;
-        }
+        margin-top: 0px;
+        font-weight: 100;
     }
     .blogimage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         img{
-            width: 55%;
+            width: 90%;
+        }
+    }
+    .content{
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+        text-justify: inter-word;
+        .quoteblock{
+            font-family: Heebo, Helvetica, sans-serif;
+            font-size: 50px;
+            font-style: italic;
+            color:#6B00D7;
+        }
+        p{
+            margin-top: 5px;
+        }
+    }
+    .nextarticle{
+        background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
+        width: fit-content;
+        padding: 12px 20px;
+        border: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a{
+            font-family: Heebo;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
         }
     }
 }
