@@ -10,7 +10,7 @@ header{
         font-weight:100;
         color: white;
         text-align: center;
-        height: 105px;
+        height: 115px;
             span{
                 font-family: Helvetica, sans-serif;
                 font-weight: 800;
@@ -20,11 +20,12 @@ header{
                 color: white;
                 text-align: center;
                 text-decoration: none;
+                font-size: 1.5em;
             }
             h1{
                 margin: 0px;
                 padding-top: 20px;
-                padding-bottom: 10px;
+                padding-bottom: 0px;
             }    
     }
 }
@@ -59,7 +60,7 @@ header{
     background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
     color: black;
     text-align: center;
-    height: 30px;
+    height: 40px;
     h3{
         margin: 0px;
         padding: 6px;
@@ -74,18 +75,37 @@ footer{
     font-weight: 100;
     color: white;
     text-align: center;
+    h6{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
 }
 // This is the scss for all body elements, code is nested in order of pages home, about, contact, work-history, blog
 .body{
     .homedisplay{
         margin: 0;
+        position: relative;
+        text-align: center;
         a{
             text-decoration: none;
+            color: #190087;
         }
         img{
             margin: 0px;
             width: 100%;
             height: auto;
+        }
+        .textoverlay{
+            font-family: Heebo, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px #6B00D7;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%)
         }
     }
     .profile{
@@ -123,26 +143,74 @@ footer{
         }
         input[type=submit]{
             background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
-            font-family: Heebo;
+            font-family: Heebo, Helvetica, sans-serif;
             font-weight: 400;
+            font-size: 20px;
             color: white;
             padding: 12px 20px;
+            margin-bottom: 30px;
             border: none;
         }
     }
-    .resume{
-        background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
-        width: fit-content;
-        padding: 12px 20px;
-        border: none;
-        a{
-            font-family: Heebo;
-            font-weight: 400;
-            color: white;
-            text-decoration: none;
+    .resumeworkhistory{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        h3{
+            font-size: 25px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        .resume{
+            display: flex;
+            flex-wrap: wrap;
+            align-self: center;
+            background-image: linear-gradient(to bottom right,#D391FA, #C364FA, #A230ED, #6B00D7, #3E00B3,#190087);
+            width: fit-content;
+            padding: 12px 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border: none;
+            a{
+                font-family: Heebo, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .currentwork{
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 2px 2px lightgray;
+        }
+        .workhistory{
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 2px 2px lightgray;
+        }
+        .education{
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 2px 2px lightgray;
+        }
+        .skills{
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            box-shadow: 2px 2px 2px 2px lightgray;
+    
         }
     }
     .bloglayout{
+        margin-top: 15px;
+        margin-bottom: 15px;
         a{
             text-decoration: none;
             padding: 5px;
@@ -154,12 +222,18 @@ footer{
         .articlecontainer{
             width:70%;
             height: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
             background-color: white;
             display:flex;
             flex-direction:column;
             flex-wrap: wrap;
             justify-content: space-between;
             box-shadow: 2px 2px 2px 2px lightgray;
+            @media only screen and (min-width: 800px){
+                width:50%;
+                height: auto;
+            }
             img{
                 width: 100%;
                 height: auto;
@@ -205,14 +279,25 @@ article{
         flex-direction: column;
         align-items: center;
         img{
+            @media only screen and (max-width: 799px){
             width: 80%;
+            }
+            @media only screen and (min-width: 800px){
+                width: 60%;
+            }
         }
     }
     .content{
-        margin-left: 10%;
-        margin-right: 10%;
         text-align: justify;
         text-justify: inter-word;
+        @media only screen and (max-width: 799px){
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        @media only screen and (min-width: 800px){
+            margin-left: 20%;
+            margin-right: 20%;
+        }
         .quoteblock{
             font-family: Heebo, Helvetica, sans-serif;
             font-size: 50px;
@@ -231,8 +316,9 @@ article{
         margin-top: 30px;
         margin-bottom: 30px;
         a{
-            font-family: Heebo;
+            font-family: Heebo, Helvetica, sans-serif;
             font-weight: 400;
+            font-size: 20px;
             color: white;
             text-decoration: none;
         }
